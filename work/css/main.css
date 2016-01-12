@@ -1,14 +1,41 @@
 /* add custom styles */
 
-/*font-family: 'Lora', serif;*/
-
 /*font-family: 'Source Sans Pro', sans-serif;*/
+  /*font-family: 'Lora', serif;*/
 
 
 body {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .navbar {
-  color: #00b7f1;
+  background-color: #00b7f1;
+  min-height: 70px;
+  border-bottom: 1px solid #aeb5be;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: #f1f3f6;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #323e48;
+  background-color: transparent;
+}
+
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #323e48;
+}
+
+.caps-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 768px){
+  .navbar-nav>li>a {
+    padding-top: 20px;
+  }
 }
