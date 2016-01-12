@@ -6,6 +6,18 @@
 
 body {
   padding-top: 70px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #febe10;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .navbar, .navbar-header {
@@ -28,14 +40,20 @@ body {
 }
 
 .caps-title {
-  font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.services-jumbo {
+  padding: 50px;
+}
+
+
+/***** MEDIA *****/
+
 @media (min-width: 768px){
   .navbar-nav>li>a {
-    padding-top: 20px;
+    padding-top: 25px;
   }
 }
 
