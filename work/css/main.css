@@ -8,7 +8,7 @@ body {
   padding-top: 70px;
 }
 
-.navbar {
+.navbar, .navbar-header {
   background-color: #00b7f1;
   min-height: 70px;
   border-bottom: 1px solid #aeb5be;
@@ -22,7 +22,6 @@ body {
   color: #323e48;
   background-color: transparent;
 }
-
 
 .navbar-inverse .navbar-nav>li>a:hover{
   color: #323e48;
@@ -39,3 +38,67 @@ body {
     padding-top: 20px;
   }
 }
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+  padding-top: 15px;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse {
+  border: none;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .navbar-collapse{
+    background: #d4631c;
+  }
+  .navbar-collapse li {
+    text-align: right;
+    border-bottom: 1px solid #f78546;
+  }
+  .navbar-collapse li a {
+    text-align: right;
+    padding: 5px;
+  }
+  .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+.navbar, .navbar-header {
+    border-bottom: 0;
+  }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #febe10;
+    background-color: transparent;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover{
+    color: #febe10;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
