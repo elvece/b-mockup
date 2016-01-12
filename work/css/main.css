@@ -7,6 +7,7 @@
 body {
   padding-top: 70px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
 }
 
 h2 {
@@ -15,9 +16,25 @@ h2 {
   color: #febe10;
 }
 
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: black;
+}
+
+h5 {
+  color: #00b7f1;
+}
+
 p {
   font-weight: 300;
-  font-size: 18px;
+}
+
+.btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: #febe10;
+  padding: 3px 20px 3px 20px;
 }
 
 .navbar, .navbar-header {
@@ -27,16 +44,16 @@ p {
 }
 
 .navbar-inverse .navbar-nav>li>a{
-  color: #f1f3f6;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: #323e48;
+  color: black;
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
-  color: #323e48;
+  color: black;
 }
 
 .caps-title {
@@ -44,10 +61,18 @@ p {
   font-weight: bold;
 }
 
-.services-jumbo {
-  padding: 50px;
+.services {
+  padding: 50px 250px 50px 250px;
+  border-bottom: 1.8px solid #aeb5be;
 }
 
+.services-p {
+  font-size: 16px;
+}
+
+.back-color{
+  background-color: #f1f3f6;
+}
 
 /***** MEDIA *****/
 
