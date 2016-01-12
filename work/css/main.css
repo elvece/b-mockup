@@ -1,12 +1,11 @@
-/* add custom styles */
-
-/*font-family: 'Source Sans Pro', sans-serif;*/
-  /*font-family: 'Lora', serif;*/
-
 
 body {
   padding-top: 70px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+body> .container {
+  padding: 70px 15px 0;
 }
 
 h2 {
@@ -21,6 +20,13 @@ h3 {
   color: black;
 }
 
+h4 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
 h5 {
   color: #00b7f1;
 }
@@ -28,6 +34,14 @@ h5 {
 p {
   font-weight: 300;
   font-size: 18px;
+}
+
+hr {
+  background-color: #323e48;
+  color: #323e48;
+  border: #323e48;
+  width: 50px;
+  height: 3px;
 }
 
 .btn {
@@ -75,7 +89,7 @@ p {
 }
 
 .services {
-  padding: 50px 250px 50px 250px;
+  padding: 50px 125px 50px 125px;
   border-bottom: 1.8px solid #aeb5be;
 }
 
@@ -83,8 +97,81 @@ p {
   font-size: 16px;
 }
 
-.back-color{
+.grey-back-color{
   background-color: #f1f3f6;
+}
+
+.orange-back-color{
+  background-color: #d4631c;
+}
+
+label {
+  color: white;
+  font-size: 16px;
+}
+
+.large-font {
+  font-size: 20px;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #f78546;
+  top: 0;
+  width: 70px;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.fancy-border {
+  border-left: 1px solid #f78546;
+  border-right: 1px solid #f78546;
+  border-bottom: 1px solid #f78546;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+
+footer {
+  font-family: 'Lora', serif;
+  background-color: #323e48;
+  color: #aeb5be;
+}
+
+.footer-nav {
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.footer-nav a {
+  color: #aeb5be;
+}
+
+.footer-nav a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /***** MEDIA *****/
@@ -136,6 +223,16 @@ p {
   }
   .services {
     padding: 20px 50px 20px 50px;
+  }
+  .footer-brand {
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-nav {
+    float: none;
+    text-align: center;
+    margin-top: -75px;
   }
 }
 
