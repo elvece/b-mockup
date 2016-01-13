@@ -8,22 +8,17 @@ body> .container {
 }
 
 h2 {
-  font-family: 'Lora', serif;
-  font-weight: bold;
   color: #febe10;
 }
 
 h3 {
-  font-family: 'Lora', serif;
-  font-weight: bold;
   color: black;
 }
 
 h4 {
-  font-family: 'Lora', serif;
-  font-weight: bold;
   color: white;
   text-align: center;
+  font-size: 20px;
 }
 
 h5 {
@@ -43,11 +38,20 @@ hr {
   height: 3px;
 }
 
+.alt-font {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+}
+
 .btn {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   background-color: #febe10;
   padding: 3px 20px 3px 20px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 25px;
 }
 
 .navbar, .navbar-header {
@@ -113,42 +117,16 @@ label {
   font-size: 20px;
 }
 
-.fancy {
-  line-height: 0.5;
-  text-align: center;
-}
-
-.fancy span {
-  display: inline-block;
-  position: relative;
-}
-
-.fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid #f78546;
-  top: 0;
-  width: 70px;
-}
-
-.fancy span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-
-.fancy span:after {
-  left: 100%;
-  margin-left: 15px;
-}
-
 .fancy-border {
-  border-left: 1px solid #f78546;
-  border-right: 1px solid #f78546;
-  border-bottom: 1px solid #f78546;
+  border: 1px solid #f78546;
   border-radius: 15px;
   padding-bottom: 20px;
+}
+
+.cutout {
+  margin-top: -12px;
+  z-index: -1;
+  background-color: #d4631c;
 }
 
 footer {
@@ -175,17 +153,6 @@ footer {
 
 /***** MEDIA *****/
 
-@media (min-width: 768px){
-  .navbar-nav>li>a {
-    padding-top: 25px;
-  }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .services {
@@ -194,8 +161,7 @@ footer {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width : 767px) {
   .navbar-collapse{
     background: #d4631c;
   }
@@ -238,11 +204,8 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+  h3 {
+    font-size: 22px;
+  }
 }
 
